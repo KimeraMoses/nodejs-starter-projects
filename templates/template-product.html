@@ -30,7 +30,7 @@
       }
 
       body {
-        padding: 5rem 5rem 10rem;
+        
         line-height: 1.7;
         font-family: "Nunito Sans", sans-serif;
         color: #555;
@@ -65,6 +65,7 @@
       .container {
         width: 95rem;
         margin: 0 auto;
+        padding: 5rem 5rem 10rem;
       }
 
       .product {
@@ -265,11 +266,47 @@
       .not-organic {
         display: none;
       }
+      .footer {
+        margin: 0 2rem 2rem;
+      }
+      .copyright {
+        padding: 20px;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        transform: skewX(-20deg);
+      }
+      .copyright h4 {
+        font-family: "Megrim", sans-serif;
+      }
+      .back2Top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .top-arrow {
+        height: 6rem;
+        width: 6rem;
+        background-image: linear-gradient(to bottom, #9be15d, #00e3ae);
+        box-shadow: 0 2rem 4rem rgb(0 0 0 / 40%);
+        border-radius: 50%;
+        padding: 20px;
+        margin-top: -20px;
+        z-index: 9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        cursor: pointer;
+        text-decoration: none;
+      }
     </style>
   </head>
 
   <body>
-    <div class="container">
+    <div class="container" id="#top">
       <h1>🌽 MOXHUS Farm 🥦</h1>
 
       <figure class="product">
@@ -303,6 +340,14 @@
 
         <p class="product__description">{%DESCRIPTION%}</p>
       </figure>
+    </div>
+    <div class="footer">
+      <div class="copyright">
+        <h4>Copyright © 2022 All rights reserved by Kimera Moses</h4>
+      </div>
+      <div class="back2Top">
+        <a href="#top" class="top-arrow">👆</a>
+      </div>
     </div>
   </body>
 </html>

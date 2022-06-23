@@ -30,16 +30,16 @@
       }
 
       body {
-        padding: 5rem 5rem 10rem;
+        /* padding: 5rem 5rem 10rem; */
         line-height: 1.7;
-        font-family: 'Nunito Sans', sans-serif;
+        font-family: "Nunito Sans", sans-serif;
         color: #555;
         min-height: 100vh;
         background: linear-gradient(to bottom right, #9be15d, #00e3ae);
       }
 
       h1 {
-        font-family: 'Megrim', sans-serif;
+        font-family: "Megrim", sans-serif;
         font-size: 6rem;
         color: white;
         transform: skewY(-5deg);
@@ -49,7 +49,7 @@
       }
 
       h1::before {
-        content: '';
+        content: "";
         display: block;
         height: 65%;
         width: 49%;
@@ -63,8 +63,9 @@
       }
 
       .container {
-        width: 95rem;
+        width: 100rem;
         margin: 0 auto;
+        padding: 5rem 5rem 10rem;
       }
 
       .cards-container {
@@ -97,9 +98,9 @@
       }
 
       .card__title {
-        font-family: 'Megrim', sans-serif;
+        font-family: "Megrim", sans-serif;
         color: white;
-        font-size: 3.25rem;
+        font-size: 2.25rem;
         transform: skewX(20deg);
       }
 
@@ -137,7 +138,7 @@
 
       .card__detail--price {
         font-weight: 900;
-        font-size: 1.5rem;
+        font-size: 1.5rem!important;
       }
 
       .card__link:link,
@@ -184,15 +185,58 @@
       .not-organic {
         display: none;
       }
+
+      .footer {
+        margin: 0 2rem 2rem;
+      }
+      .copyright {
+        padding: 20px;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        transform: skewX(-20deg);
+      }
+      .copyright h4 {
+        font-family: "Megrim", sans-serif;
+      }
+      .back2Top {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .top-arrow {
+        height: 6rem;
+        width: 6rem;
+        background-image: linear-gradient(to bottom, #9be15d, #00e3ae);
+        box-shadow: 0 2rem 4rem rgb(0 0 0 / 40%);
+        border-radius: 50%;
+        padding: 20px;
+        margin-top: -20px;
+        z-index: 9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        cursor: pointer;
+        text-decoration: none;
+      }
     </style>
   </head>
 
   <body>
-    <div class="container">
-      <h1>🌽 MOXHUS Farm 🥦</h1>
+    <div class="container" >
+      <h1 id="#top">🌽 MOXHUS Farm 🥦</h1>
 
-      <div class="cards-container">
-        {%PRODUCT_CARDS%}
+      <div class="cards-container">{%PRODUCT_CARDS%}</div>
+    </div>
+    <div class="footer">
+      <div class="copyright">
+        <h4>Copyright © 2022 All rights reserved by Kimera Moses</h4>
+      </div>
+      <div class="back2Top">
+        <a href="#top" class="top-arrow">👆</a>
       </div>
     </div>
   </body>
