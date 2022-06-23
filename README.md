@@ -1,14 +1,14 @@
+# Moxhus Farm | Nodejs
 
-# NodeJs Project
+This is a project done in the process of learning Nodejs, It's reading data from a JSON file and loading it dynamically.
 
-> This is a project done in the pocess of learning Nodejs, It's reading data from a Json file and loading dynamically.
+## Installation
 
-# Installation
+Install the nodejs from https://nodejs.org/en/download/.
 
-> Download and extract all the files
+In the terminal, Start the project by typing the command below:
 
-> Open the project folder in VsCode or any other editor
-
-> In the terminal, type node index.js
-
-> Visit http://127.0.0.1:8000/ to view the project live
+```bash
+node index.js
+```
+> In any browser, Visit http://127.0.0.1:8000/ to view the project live
